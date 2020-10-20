@@ -1,6 +1,6 @@
 var distance = prompt ('Quanti km devi percorrere? ');
 var age = prompt ('Quanti anni hai? ');
-var priceInit = (distance * 0,21).toFixed(2);
+var priceInit = (distance * 0.21).toFixed(2);
 var minorDiscount = (priceInit - (priceInit * 0.2)).toFixed(2);
 var overDiscount = (priceInit - (priceInit * 0.4)).toFixed(2);
 
