@@ -13,12 +13,18 @@ buttonElem.addEventListener('click', function() {
 
   if (ageElem === 'minor' ) {
     document.getElementById('costo').innerHTML = (minorDiscount);
+    document.getElementById('offerta').innerHTML = ('Sconto minorenni');
   } else if (ageElem === 'major') {
     document.getElementById('costo').innerHTML = (priceInit);
+    document.getElementById('offerta').innerHTML = ('Prezzo standard');
   } else if (ageElem === 'over') {
     document.getElementById('costo').innerHTML = (overDiscount);
+    document.getElementById('offerta').innerHTML = ('Sconto Over 65');
+
   }
-console.log(minorDiscount)
-console.log(priceInit)
-console.log(overDiscount)
+
+  document.getElementById('name').innerHTML = (nameSurElem);
+  document.getElementById('codice').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1) ) + 90000;
+  document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;  
+
 })
