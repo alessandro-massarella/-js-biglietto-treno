@@ -10,6 +10,9 @@ buttonElem.addEventListener('click', function() {
   var priceInit = (distanceElem * 0.21).toFixed(2);
   var minorDiscount = (priceInit - (priceInit * 0.2)).toFixed(2);
   var overDiscount = (priceInit - (priceInit * 0.4)).toFixed(2);
+  var ticket = document.getElementById('ticket');
+  ticket.style.display = 'block';
+
 
   if (ageElem === 'minor' ) {
     document.getElementById('costo').innerHTML = (minorDiscount);
@@ -25,6 +28,6 @@ buttonElem.addEventListener('click', function() {
 
   document.getElementById('name').innerHTML = (nameSurElem);
   document.getElementById('codice').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1) ) + 90000;
-  document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;  
+  document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
 
 })

@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="debug">
+  <body>
+    <h3>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h3>
     <div class="container calc_form">
-      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <div class="row box">
-        <div class="col-xs-4 box">
+      <div class="dati">
+        <div>
           <p>Nome e Cognome</p>
           <input id="nameSurn" type="text">
         </div>
-        <div class="col-xs-4 box">
+        <div>
           <p>Km da percorrere</p>
           <input id="distance" type="number" name="" value="">
         </div>
-        <div class="col-xs-4 box">
+        <div>
           <p>Fascia d'età:</p>
           <select name="age" id="age">
             <option value="minor">0-17</option>
@@ -29,40 +29,52 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <button id="myButton" type="button" name="button">Genera</button>
-          <button type="button" name="button">Annulla</button>
+          <div class="button_group">
+            <button id="myButton" type="button" name="button">Genera</button>
+            <button type="button" name="button">Annulla</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container ticket">
-      <h1>IL TUO BIGLIETTO</h1>
-      <div class="row">
-        <div class="col-xs-12">
-          <h3>DETTAGLIO PASSEGGERI</h3>
-        </div>
-        <div class="col-xs-12">
-          <table class="table">
-            <tr>
-              <th>Nome Passeggero</th>
-              <th>Offerta</th>
-              <th>Carrozza</th>
-              <th>Codice CP</th>
-              <th>Costo biglietto</th>
-            </tr>
-            <tr>
-              <td id="name"></td>
-              <td id="offerta"></td>
-              <td id="carrozza"></td>
-              <td id="codice"></td>
-              <td id="costo"></td>
-            </tr>
-          </table>
 
-        </div>
 
+
+<div id="ticket" class="ticket">
+  <h3>IL TUO BIGLIETTO</h3>
+  <div  class="container int_ticket">
+    <div  class="col-xs-12">
+      <div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+          </div>
+          <div class="col-xs-12">
+            <table class="table">
+              <tr>
+                <th>Nome Passeggero</th>
+                <th>Offerta</th>
+                <th>Carrozza</th>
+                <th>Codice CP</th>
+                <th>Costo biglietto</th>
+              </tr>
+              <tr>
+                <td id="name"></td>
+                <td id="offerta"></td>
+                <td id="carrozza"></td>
+                <td id="codice"></td>
+                <td id="costo"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
-
     </div>
+  </div>
+
+
+</div>
+
+
 
 
     <!-- script -->

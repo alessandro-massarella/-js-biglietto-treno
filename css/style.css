@@ -1,8 +1,49 @@
 body {
-  background-color: orange;
+  background-color: #aa204f;
+  font-family: sans-serif;
+
+}
+
+.calc_form {
+  background-color: white;
+  height: 30vh;
+  border-radius: 10px;
+  box-shadow: 10px 8px 22px 0px rgba(0,0,0,0.75);
+}
+
+.button_group {
+  text-align: center;
+}
+.dati {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #aa204f;
+  text-align: center;
+}
+.calc_form input,
+.calc_form select {
+  color: black;
 }
 
 
+.ticket {
+  display: none;
+
+
+}
+.int_ticket {
+  height: 30vh;
+  background-color: white;
+  box-shadow: 10px 8px 22px 0px rgba(0,0,0,0.75);
+
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
 
 
 /* debug */
@@ -10,6 +51,6 @@ body {
   border: 1px solid black;
 }
 
-.box {
+/* .box {
   height: 300px;
-}
+} */
