@@ -14,6 +14,8 @@ buttonElem.addEventListener('click', function() {
   ticket.style.display = 'block';
 
 
+
+
   if (ageElem === 'minor' ) {
     document.getElementById('costo').innerHTML = (minorDiscount);
     document.getElementById('offerta').innerHTML = ('Sconto minorenni');
@@ -29,5 +31,15 @@ buttonElem.addEventListener('click', function() {
   document.getElementById('name').innerHTML = (nameSurElem);
   document.getElementById('codice').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1) ) + 90000;
   document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
+});
 
+
+var refreshButtonEl = document.getElementById('annullaBut');
+
+refreshButtonEl.addEventListener('click', function(){
+	nameSurn.value = "";
+	distance.value = "";
+	age.value = "major";
+
+	ticket.style.display = 'none';
 })
